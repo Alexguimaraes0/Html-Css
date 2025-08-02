@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+details {
+    width: 220px;
+    height: 300px;
+    border: 1px solid #000;
+
+}
+
+details:not([open]) {
+    width: 80px;
+}
+
+summary{
+    background-color: ffffff;
+    text-align: right;
+}
