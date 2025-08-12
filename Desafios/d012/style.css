@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+:root {
+    ---fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    ---fonte2: 'Passion One', cursive;
+    ---fonte3: 'Sriracha', cursive;
+}
+
+header  {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    font-family: var(---fonte2);
+    padding-top: 45px;
+    font-variant: small-caps;
+    font-size: 10vw;
+}
+
+ p#milton {
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    padding-bottom: 50px;
+    
+}
+
+p#milton > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+p#milton > a:hover {
+    text-decoration: underline;
+}
+
+.versos {
+    text-align: justify;
+}
+
+.normal {
+    background-color: #fff;
+    color: black;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
