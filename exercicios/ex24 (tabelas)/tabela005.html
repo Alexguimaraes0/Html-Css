@@ -27,19 +27,39 @@
     th {
       background-color: #f2f2f2;
     }
+
+    .cnome {
+      background-color: palevioletred;
+    }
+
+    .cprof {
+      background-color: greenyellow;
+    }
+
+    .cgrupo {
+      background-color: yellow;
+    }
   </style>
 </head>
 <body>
 
   <h1>Exercício de Tabela</h1>
-  <h2>Cadastro</h2>
+  
+  <caption>Cadastro</caption>
 
   <table>
+
+    <colgroup>
+      <col class="cnome">
+      <col class="cgrupo" span="2">
+      <col class="cprof">
+    </colgroup>
+
     <tr>
-      <th>Nome</th>
-      <th>Sexo</th>
-      <th>Idade</th>
-      <th>Profissão</th>
+      <th scope="col" class="cnome">Nome</th>
+      <th scope="col" class="cgrupo">Sexo</th>
+      <th scope="col" class="cgrupo">Idade</th>
+      <th scope="col" class="cprof">Profissão</th>
     </tr>
     <tr>
       <td>Ana Maria</td>
