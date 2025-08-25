@@ -71,5 +71,10 @@ section div.box p {
     .box .conteudo {
         width: 100%;
         text-align: center;
+        
     }
+}
+
+.conteudo > p {
+    text-align: justify;
 }
