@@ -74,7 +74,8 @@ table {
     border: 1px solid black;
     border-collapse: collapse;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+
 }
 
 td, th {
@@ -82,5 +83,38 @@ td, th {
     padding: 10px;
 }
 
+.botao {
 
+    background-image: url(imagens/25231.png);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: center left;
+    
+    margin-bottom: 20px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #33363C;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;  
+      
+
+}
+
+.botao:hover {
+    
+    transform: scale(1.1);
+    background-color: #33363C;
+    color: #fff;
+    box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.3);
+    
+    
+}
+
+.botao:active {
+    color: yellow;
+}
 
