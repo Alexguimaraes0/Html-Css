@@ -92,7 +92,8 @@ td, th {
     background-image: url(imagens/25231.png);
     background-repeat: no-repeat;
     background-size: 30px 30px;   
-    background-position: center left;
+    background-position: 6px center;
+    padding-left: 5px;
     margin-bottom: 20px;
     display: inline-block;
     text-decoration: none;
