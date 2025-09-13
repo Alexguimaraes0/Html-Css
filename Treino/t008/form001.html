@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <form action="cadastro.javascript" autocomplete="on" method="post">
+        <div>
+            <label for="inome">Nome</label> <br>
+            <input type="text" id="inome" name="nome" required placeholder="Digite seu nome" autocomplete="username">
+        </div>
+        <div>
+            <label for="iemail">E-mail</label> <br>
+            <input type="email" id="iemail" name="email" required autocomplete="email" placeholder="email@exemplo.com">
+        </div>
+        <div>
+            <label for="isen">Senha</label> <br>
+            <input type="password" name="sen" id="isen" required autocomplete="current-password" placeholder="Digite sua senha">
+        </div>
+        <div>
+            <label for="igen">Gênero</label> <br>
+            <div id="igen">
+                <input type="radio" name="gen" id="igen" value="feminino" required> Feminino <br>
+                <input type="radio" name="gen" id="igen" value="masculino" required> Masculino <br>
+                <input type="radio" name="gen" id="igen" value="outro" required> Outro
+            </div>
+        </div>
+        <div>
+            <input type="checkbox" name="termos" id="itermos" required>
+            <label for="itermos">Aceito os Termos de Uso</label>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>
