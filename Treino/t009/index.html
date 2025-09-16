@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    
+<h1>Formulário de Feedback</h1>
+
+<form action="feedback.php" method="post" autocomplete="on">
+
+    <div>
+        <label for="iname">Nome *</label><br>
+        <input type="text" id="iname" name="name" required placeholder="Digite seu nome" autocomplete="username"><br><br>
+    </div>
+
+    <div>
+        <label for="iemail">E-mail *</label><br>
+        <input type="email" id="iemail" name="email" required placeholder="email@exemplo.com" autocomplete="email"><br><br>
+    </div>
+
+    <div>
+        <label for="ifeedback">Mensagem *</label><br>
+        <textarea id="ifeedback" name="feedback" rows="4" cols="50" required placeholder="Escreva seu feedback"></textarea><br><br>
+    </div>
+
+    <div>
+        <label for="iavaliação">Avaliação *</label>
+        <select name="avaliação" id="iavaliação"  required>
+            <option value="bom">Bom</option>
+            <option value="regular">Regular</option>
+            <option value="ruim">ruim</option>
+        </select> <br><br>
+    </div>
+
+    <div>
+        <input type="submit" value="Enviar">
+    </div>
+
+</body>
+</html>
