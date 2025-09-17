@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Inscrição em Evento</title>
+    <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
     <h1>Formulário de Inscrição em Evento</h1>
@@ -39,15 +40,38 @@
 
         <div>
             <label for="iarea"> Escolher área de interesse</label> <br>
-            <input type="checkbox" name="front" id=""> Front-end
-            <input type="checkbox" name="" id=""> Back-end
-            <input type="checkbox" name="" id=""> UX/UI
+            <input type="checkbox" name="interesse" id="front-end" required> Front-end
+            <input type="checkbox" name="interesse" id="front-end"> Back-end
+            <input type="checkbox" name="interesse" id="front-end"> UX/UI
+        </div> <br> <br>
+
+        <div>
+            <label for="turno">
+                Turno preferido
+            </label> <br>
+            <label for="manha"></label>
+            <input type="radio" name="turno" id="manha" checked required value="manha"> Manhã
+
+            <label for="tarde"></label>
+            <input type="radio" name="turno" id="tarde"  value="tarde"> Tarde
+            
+            <label for="noite"></label>
+            <input type="radio" name="turno" id="noite"  value="noite" > Noite
+        </div> <br> <br>
+
+        <div>
+            <label for="icurriculo">Uplouad de arquivo</label> <br>
+            <input type="file" name="curriculo" id="icurriculo" required >
+            <p id="apenaspdf">Envie seu currículo (apenas arquivos em PDF)</p>
+        </div> <br> <br>
+
+        <div>
+            <label for="iobservacoes">Observações</label> <br>
+            <textarea name="observacoes" id="iobservacoes" placeholder="Escreva algo se desejar"></textarea>
         </div>
 
         <div>
-            <label for="iturno">Turno preferido</label> <br>
-            <input type="radio" name="turno" id="iturno" checked required> Manhã
-            <input type="radio" name="" id="">
+            <input type="submit" value="Enviar Inscrição">
         </div>
 
     </form>    
