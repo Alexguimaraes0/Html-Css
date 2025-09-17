@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição em Evento</title>
+</head>
+<body>
+    <h1>Formulário de Inscrição em Evento</h1>
+    <form action="/submit" method="post" autocomplete="on">
+
+        <div>
+
+            <label for="inome">Nome Completo</label><br>
+            <input type="text" id="inome" name="nome" required placeholder="Digite seu nome" autocomplete="username"><br><br>
+
+        </div>
+
+        <div>
+
+            <label for="iemail">Email</label><br>
+            <input type="email" id="iemail" name="email" required placeholder="email@exemplo.com"  autocomplete="email"><br><br>
+
+        </div>
+
+        <div>
+
+            <label for="itelefone">Telefone</label><br>
+            <input type="text" id="itelefone" name="telefone" required placeholder="(xx) xxxxx-xxxx" autocomplete="tel" size="11" maxlength="11"><br><br>
+
+        </div>
+
+        <div>
+
+            <label for="idata">Data de nascimento</label> <br>
+            <input type="date" name="data" id="idata" required ><br><br>
+
+        </div>
+
+        <div>
+            <label for="iarea"> Escolher área de interesse</label> <br>
+            <input type="checkbox" name="front" id=""> Front-end
+            <input type="checkbox" name="" id=""> Back-end
+            <input type="checkbox" name="" id=""> UX/UI
+        </div>
+
+        <div>
+            <label for="iturno">Turno preferido</label> <br>
+            <input type="radio" name="turno" id="iturno" checked required> Manhã
+            <input type="radio" name="" id="">
+        </div>
+
+    </form>    
+
+
+
+
+</body>
+</html>
