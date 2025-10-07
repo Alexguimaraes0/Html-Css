@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    background-color: rgb(126, 126, 126);
+}
+
+body {
+    
+    margin: 30px auto;
+    width: 700px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.582);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 4px;
+    background-color: rgb(92, 92, 92);
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+
+img {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0 20px 20px 20px;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+ul {
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+
+a {
+    background-image: url(../imagens/25231.png);
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-position: center center;
+    
+    
+    background-color: rgb(58, 58, 58);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: 0.3s; 
+}
+
+
+a:hover {
+    background-color: rgb(34, 34, 34);
+    transform: scale(1.05);
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.288);
+}
+
+a:active {
+    color: rgba(202, 202, 2, 0.808);
+}
+
+
+label {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgb(158, 158, 158);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    resize: vertical;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    min-height: 100px;
+    max-height: 400px;
+
+}
+
+input:focus, textarea:focus {
+    border-color: rgb(92, 92, 92);
+    outline: none;
+    box-shadow: 0 0 5px rgba(92, 92, 92, 0.5);
+}
+
+input [submit] {
+    background-color: rgb(58, 58, 58);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
