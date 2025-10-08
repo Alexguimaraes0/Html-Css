@@ -42,6 +42,7 @@ img {
 
 #phone {
     display: block;
+    max-width: 600px;
 }
 
 #tablet, #print, #desktop, #tv {
