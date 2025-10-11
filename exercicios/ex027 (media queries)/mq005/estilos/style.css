@@ -1,6 +1,15 @@
 @charset "UTF-8";
 
 
+/* Typical Device BreakPoints 
+
+pequena: até 599px
+médio: 600px-1023px
+grande: 1024px-1439px
+extra grande : 1440px ou mais
+
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -8,5 +17,102 @@
 }
 
 body, html {
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E3E3E1;
+    
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0px 10px 0px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+
+}
+
+nav {
+    padding: 20px 0px 0px 0px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    background-color: #999997;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+
+}
+
+nav a:hover {
+    background-color: #666665;
+}
+
+main {
+    text-align: justify;
+    background-color: white;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 5px;
+    width: 65%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    text-indent: 25px;
+    margin-bottom: 10px;
+    line-height: 1.4rem;
+}
+
+@media print {
+    body, html {
+        font-size: 12pt;
+        line-height: 1.5;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    header, nav {
+        display: none;
+    }
+
+    main {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    h1, h2 {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    p {
+        text-indent: 0;
+        margin-bottom: 10px;
+        line-height: 1.4rem;
+    }
+
+    @media  screen and (min-width: 600px) {
+        nav {
+            display: none;
+        }
+    }
+    
 }
