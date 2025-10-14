@@ -140,7 +140,7 @@ p {
 }
     
     nav {
-        display: none;
+        display: block;
     }
 
     nav ul {
@@ -163,4 +163,18 @@ p {
         width: 90vw;
     }
 
+    nav {
+        display: none; /* Esconder o nav inicialmente em telas pequenas */
+    }
+
+}
+
+@media screen and (min-width: 611px) {
+    nav {
+        display: block !important; /* força o nav a aparecer em telas grandes */
+    }
+    .material-symbols-outlined {
+        display: none !important; /* esconde o ícone em telas grandes */
+    }
+    
 }
