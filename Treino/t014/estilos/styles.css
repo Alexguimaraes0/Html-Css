@@ -14,13 +14,14 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    justify-content: flex-start;
 
 }
 
 
 header {
-    width: 100vw;
+    width: 100%;
     background-color: #4D6A8C;
     display: flex;
     justify-content: space-between;
@@ -90,6 +91,9 @@ h1::after {
 
 
 .conteiner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     flex: 1 0 auto;
     display: flex;
     justify-content: center;
@@ -104,17 +108,18 @@ h1::after {
 }
 
 .conteudo {
-    flex: 0 0 1010px;
+    flex: 1 1 auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 5px;
     
+    
 }
 
 .sidebar {
-    width: 400px;
-    flex: 0 1 200px; 
+    width: auto;
+    flex: 0 1 260px; 
     background: #fff;
     padding: 20px;
     border: 2px solid rgb(92, 92, 92);
@@ -163,7 +168,7 @@ h1::after {
 }
 
 .adver {
-    flex: 0 1 320px; 
+    flex: 0 1 260px; 
     background: #fff; 
     padding: 20px;
     text-align: center;
@@ -217,7 +222,7 @@ footer {
     padding: 20px;
     margin-top: 30px;
     box-shadow: 0px -2px 12px rgba(0, 0, 0, 0.493);
-    flex-shrink: 1;
+    flex-shrink: 0;
 
 }
 

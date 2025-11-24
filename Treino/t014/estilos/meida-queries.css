@@ -1,1 +1,101 @@
 @charset "UTF-8";
+
+
+@media screen and (max-width: 1024px) {
+    
+
+.conteiner {
+        padding: 0 16px;
+        max-width: 960px;
+    }
+
+    /* empilha as colunas em vez de encolher tudo */
+    .conteudo {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* cada coluna ocupa largura total (empilhadas) */
+    .sidebar,
+    .main-content,
+    .adver {
+        
+        flex: 1 1 auto;
+        width: 70%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 18px;
+
+    }
+
+    .sidebar li, h3 {
+        margin: auto;
+        text-align: center;
+
+    }
+
+    .main-content > p {
+        text-align: start;
+        
+    }
+
+    .ad-placeholder {
+        width: 200px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 12px 0;
+        gap: 12px;
+    }
+
+    /* ajusta header/nav para caber */
+    .nav-list {
+        margin-left: 16px;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .material-symbols-outlined {
+        margin-right: 16px;
+        font-size: 42px;
+    }
+
+    /* torne a linha do h1 responsiva */
+    h1::after {
+        width: calc(100% - 120px);
+    }
+
+    /* footer e espaçamentos menores */
+    footer {
+        padding: 15px;
+    }
+
+
+/* pequena correção para evitar overflow causado por 100vw */
+html, body {
+    box-sizing: border-box;
+}
+
+}
+
+@media screen and (max-width: 480px) {
+    
+    .conteiner {
+        max-width: 100%;
+        padding: 0 8px;
+    }
+
+    .sidebar,
+    .main-content,
+    .adver {
+        width: 90%;
+    }
+
+    .ad-placeholder {
+        width: 150px;
+    }
+
+}
