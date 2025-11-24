@@ -17,11 +17,14 @@ body {
     align-items: stretch;
     justify-content: flex-start;
 
+    transition: width 0.3s height 0.3 ease-in-out;
+
 }
 
 
 header {
     width: 100%;
+
     background-color: #4D6A8C;
     display: flex;
     justify-content: space-between;
@@ -89,7 +92,6 @@ h1::after {
     
 }
 
-
 .conteiner {
     width: 100%;
     max-width: 1200px;
@@ -99,6 +101,8 @@ h1::after {
     justify-content: center;
     flex-flow: row nowrap;
     align-items: flex-start;
+
+     transition: width 1s height 1s ;
     
 }
 
@@ -114,6 +118,7 @@ h1::after {
     justify-content: center;
     margin-bottom: 5px;
     
+
     
 }
 
