@@ -21,13 +21,14 @@ header {
 }
 
  h1, h2, p {
+    padding: 10px;
     margin-bottom: 10px;
     text-align: justify;
  }
 
  img {
-    width: 450px;
-    height: 311px;
+    width: 400px;
+    height: 400px;
  }
 
 
@@ -39,18 +40,38 @@ header {
 
  .media-text {
     display: flex;
-    flex-flow: row wrap-reverse;
+   flex-flow: row wrap-reverse;
+   justify-content: space-between;
  }
 
-    .media-text img {
-        margin: 10px;
-    }
+   .media-text img {
+      margin: 10px;
+   }
 
   .text-media {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
   }
 
-  iframe {
-    display: block;
-  }
+ .text {
+   flex: 1 1 500px;
+
+ }
+
+ .media {
+    flex: 1 0 500px;
+
+ }
+
+ .media img {
+   display: block;
+   margin: auto;
+ }
+
+ .media iframe {
+   display: block;
+   margin: auto;
+
+   width: 90%;
+ }
